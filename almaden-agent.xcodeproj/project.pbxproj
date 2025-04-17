@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB178B32DB1256900D75037 /* almaden_agentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B22DB1256900D75037 /* almaden_agentApp.swift */; };
+		FAB178B52DB1256900D75037 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B42DB1256900D75037 /* ContentView.swift */; };
+		FAB178B72DB1256B00D75037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB178B62DB1256B00D75037 /* Assets.xcassets */; };
+		FAB178BA2DB1256B00D75037 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB178B92DB1256B00D75037 /* Preview Assets.xcassets */; };
+		FAB178C52DB1256B00D75037 /* almaden_agentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178C42DB1256B00D75037 /* almaden_agentTests.swift */; };
+		FAB178CF2DB1256B00D75037 /* almaden_agentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178CE2DB1256B00D75037 /* almaden_agentUITests.swift */; };
+		FAB178D12DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB178C12DB1256B00D75037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB178A72DB1256900D75037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB178AE2DB1256900D75037;
+			remoteInfo = "almaden-agent";
+		};
+		FAB178CB2DB1256B00D75037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB178A72DB1256900D75037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB178AE2DB1256900D75037;
+			remoteInfo = "almaden-agent";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAB178AF2DB1256900D75037 /* almaden-agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "almaden-agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB178B22DB1256900D75037 /* almaden_agentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentApp.swift; sourceTree = "<group>"; };
+		FAB178B42DB1256900D75037 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAB178B62DB1256B00D75037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB178B92DB1256B00D75037 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB178BB2DB1256B00D75037 /* almaden_agent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = almaden_agent.entitlements; sourceTree = "<group>"; };
+		FAB178C02DB1256B00D75037 /* almaden-agentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "almaden-agentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB178C42DB1256B00D75037 /* almaden_agentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentTests.swift; sourceTree = "<group>"; };
+		FAB178CA2DB1256B00D75037 /* almaden-agentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "almaden-agentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB178CE2DB1256B00D75037 /* almaden_agentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentUITests.swift; sourceTree = "<group>"; };
+		FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB178AC2DB1256900D75037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178BD2DB1256B00D75037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178C72DB1256B00D75037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB178A62DB1256900D75037 = {
+			isa = PBXGroup;
+			children = (
+				FAB178B12DB1256900D75037 /* almaden-agent */,
+				FAB178C32DB1256B00D75037 /* almaden-agentTests */,
+				FAB178CD2DB1256B00D75037 /* almaden-agentUITests */,
+				FAB178B02DB1256900D75037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB178B02DB1256900D75037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178AF2DB1256900D75037 /* almaden-agent.app */,
+				FAB178C02DB1256B00D75037 /* almaden-agentTests.xctest */,
+				FAB178CA2DB1256B00D75037 /* almaden-agentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB178B12DB1256900D75037 /* almaden-agent */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178B22DB1256900D75037 /* almaden_agentApp.swift */,
+				FAB178B42DB1256900D75037 /* ContentView.swift */,
+				FAB178B62DB1256B00D75037 /* Assets.xcassets */,
+				FAB178BB2DB1256B00D75037 /* almaden_agent.entitlements */,
+				FAB178B82DB1256B00D75037 /* Preview Content */,
+			);
+			path = "almaden-agent";
+			sourceTree = "<group>";
+		};
+		FAB178B82DB1256B00D75037 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178B92DB1256B00D75037 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAB178C32DB1256B00D75037 /* almaden-agentTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178C42DB1256B00D75037 /* almaden_agentTests.swift */,
+			);
+			path = "almaden-agentTests";
+			sourceTree = "<group>";
+		};
+		FAB178CD2DB1256B00D75037 /* almaden-agentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178CE2DB1256B00D75037 /* almaden_agentUITests.swift */,
+				FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */,
+			);
+			path = "almaden-agentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB178AE2DB1256900D75037 /* almaden-agent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB178D42DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agent" */;
+			buildPhases = (
+				FAB178AB2DB1256900D75037 /* Sources */,
+				FAB178AC2DB1256900D75037 /* Frameworks */,
+				FAB178AD2DB1256900D75037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "almaden-agent";
+			productName = "almaden-agent";
+			productReference = FAB178AF2DB1256900D75037 /* almaden-agent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB178BF2DB1256B00D75037 /* almaden-agentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB178D72DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agentTests" */;
+			buildPhases = (
+				FAB178BC2DB1256B00D75037 /* Sources */,
+				FAB178BD2DB1256B00D75037 /* Frameworks */,
+				FAB178BE2DB1256B00D75037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB178C22DB1256B00D75037 /* PBXTargetDependency */,
+			);
+			name = "almaden-agentTests";
+			productName = "almaden-agentTests";
+			productReference = FAB178C02DB1256B00D75037 /* almaden-agentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAB178C92DB1256B00D75037 /* almaden-agentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB178DA2DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agentUITests" */;
+			buildPhases = (
+				FAB178C62DB1256B00D75037 /* Sources */,
+				FAB178C72DB1256B00D75037 /* Frameworks */,
+				FAB178C82DB1256B00D75037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB178CC2DB1256B00D75037 /* PBXTargetDependency */,
+			);
+			name = "almaden-agentUITests";
+			productName = "almaden-agentUITests";
+			productReference = FAB178CA2DB1256B00D75037 /* almaden-agentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB178A72DB1256900D75037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FAB178AE2DB1256900D75037 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					FAB178BF2DB1256B00D75037 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FAB178AE2DB1256900D75037;
+					};
+					FAB178C92DB1256B00D75037 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FAB178AE2DB1256900D75037;
+					};
+				};
+			};
+			buildConfigurationList = FAB178AA2DB1256900D75037 /* Build configuration list for PBXProject "almaden-agent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB178A62DB1256900D75037;
+			productRefGroup = FAB178B02DB1256900D75037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB178AE2DB1256900D75037 /* almaden-agent */,
+				FAB178BF2DB1256B00D75037 /* almaden-agentTests */,
+				FAB178C92DB1256B00D75037 /* almaden-agentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB178AD2DB1256900D75037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB178BA2DB1256B00D75037 /* Preview Assets.xcassets in Resources */,
+				FAB178B72DB1256B00D75037 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178BE2DB1256B00D75037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178C82DB1256B00D75037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB178AB2DB1256900D75037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB178B52DB1256900D75037 /* ContentView.swift in Sources */,
+				FAB178B32DB1256900D75037 /* almaden_agentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178BC2DB1256B00D75037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB178C52DB1256B00D75037 /* almaden_agentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178C62DB1256B00D75037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB178CF2DB1256B00D75037 /* almaden_agentUITests.swift in Sources */,
+				FAB178D12DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB178C22DB1256B00D75037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB178AE2DB1256900D75037 /* almaden-agent */;
+			targetProxy = FAB178C12DB1256B00D75037 /* PBXContainerItemProxy */;
+		};
+		FAB178CC2DB1256B00D75037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB178AE2DB1256900D75037 /* almaden-agent */;
+			targetProxy = FAB178CB2DB1256B00D75037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAB178D22DB1256B00D75037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB178D32DB1256B00D75037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FAB178D52DB1256B00D75037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "almaden-agent/almaden_agent.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"almaden-agent/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FAB178D62DB1256B00D75037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "almaden-agent/almaden_agent.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"almaden-agent/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FAB178D82DB1256B00D75037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/almaden-agent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/almaden-agent";
+			};
+			name = Debug;
+		};
+		FAB178D92DB1256B00D75037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/almaden-agent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/almaden-agent";
+			};
+			name = Release;
+		};
+		FAB178DB2DB1256B00D75037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "almaden-agent";
+			};
+			name = Debug;
+		};
+		FAB178DC2DB1256B00D75037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "almaden-agent";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB178AA2DB1256900D75037 /* Build configuration list for PBXProject "almaden-agent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178D22DB1256B00D75037 /* Debug */,
+				FAB178D32DB1256B00D75037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB178D42DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178D52DB1256B00D75037 /* Debug */,
+				FAB178D62DB1256B00D75037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB178D72DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178D82DB1256B00D75037 /* Debug */,
+				FAB178D92DB1256B00D75037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB178DA2DB1256B00D75037 /* Build configuration list for PBXNativeTarget "almaden-agentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178DB2DB1256B00D75037 /* Debug */,
+				FAB178DC2DB1256B00D75037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB178A72DB1256900D75037 /* Project object */;
+}
