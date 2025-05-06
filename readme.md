@@ -2,7 +2,7 @@
 
 A macOS monitoring tool that collects and displays detailed system information, resource usage, and hardware activity in real time.
 
-This project was developed as a **Minimum Viable Product (MVP)** <br></br>
+This project was developed as a **Minimum Viable Product (MVP)** <br>
 for a system monitoring agent by [Almaden LTDA](https://almaden.ai/). 
 
 It utilizes native macOS APIs such as `sysctl`, `host_info`, and `IOKit` to collect low-level and high-level system data efficiently.
