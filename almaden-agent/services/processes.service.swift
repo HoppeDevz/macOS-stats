@@ -98,7 +98,6 @@ class ProcessesService {
         
         for i in 0..<pids_rcount {
             
-            
             let pid = pids_buff[i];
             
             var proctask_info = proc_taskinfo();
