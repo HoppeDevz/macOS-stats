@@ -2,7 +2,9 @@
 
 A macOS monitoring tool that collects and displays detailed system information, resource usage, and hardware activity in real time.
 
-<img src="./app-screenshot.png" />
+<p align="center">
+  <img src="./app-screenshot.png" width="500" />
+</p>
 
 ---
 
