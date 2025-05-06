@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA41D2392DB97DA000C85EF6 /* network-interfaces.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D2382DB97DA000C85EF6 /* network-interfaces.service.swift */; };
+		FA41D23B2DBA7BC400C85EF6 /* network-interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D23A2DBA7BC400C85EF6 /* network-interface.swift */; };
+		FA41D23D2DBA7F7A00C85EF6 /* append-and-return.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D23C2DBA7F7A00C85EF6 /* append-and-return.swift */; };
+		FA41D23F2DBAA4F200C85EF6 /* network-interfaces.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D23E2DBAA4F200C85EF6 /* network-interfaces.view-model.swift */; };
+		FA41D2412DBBA15F00C85EF6 /* processes.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D2402DBBA15F00C85EF6 /* processes.service.swift */; };
+		FA41D2432DBBAC9A00C85EF6 /* process-snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D2422DBBAC9900C85EF6 /* process-snapshot.swift */; };
+		FA41D2452DBBCFAA00C85EF6 /* processes.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D2442DBBCFAA00C85EF6 /* processes.view-model.swift */; };
+		FA8518EC2DBFF37C00102959 /* geolocation.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518EB2DBFF37C00102959 /* geolocation.service.swift */; };
+		FA8518EE2DBFF43900102959 /* geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518ED2DBFF43900102959 /* geolocation.swift */; };
+		FA8518F02DBFF69C00102959 /* geolocation.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518EF2DBFF69C00102959 /* geolocation.view-model.swift */; };
+		FA8518F22DC023BD00102959 /* swap-usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F12DC023BD00102959 /* swap-usage.swift */; };
+		FA8518F42DC0E2D200102959 /* applications.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F32DC0E2D200102959 /* applications.service.swift */; };
+		FA8518F62DC0FD6300102959 /* application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F52DC0FD6300102959 /* application.swift */; };
+		FA8518F82DC1101800102959 /* applications.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F72DC1101800102959 /* applications.view-model.swift */; };
+		FA8518FA2DC2409400102959 /* bundle-handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F92DC2409400102959 /* bundle-handler.swift */; };
+		FA8518FC2DC4F47900102959 /* usb.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FB2DC4F47900102959 /* usb.service.swift */; };
+		FA8518FE2DC94BE600102959 /* usb-event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FD2DC94BE600102959 /* usb-event.swift */; };
+		FA8519002DC95FC900102959 /* usb.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FF2DC95FC900102959 /* usb.view-model.swift */; };
+		FAA790902DB84C3900ABA487 /* wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7908F2DB84C3900ABA487 /* wifi.swift */; };
 		FAB178B32DB1256900D75037 /* almaden_agentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B22DB1256900D75037 /* almaden_agentApp.swift */; };
 		FAB178B52DB1256900D75037 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B42DB1256900D75037 /* ContentView.swift */; };
 		FAB178B72DB1256B00D75037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB178B62DB1256B00D75037 /* Assets.xcassets */; };
@@ -14,6 +33,28 @@
 		FAB178C52DB1256B00D75037 /* almaden_agentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178C42DB1256B00D75037 /* almaden_agentTests.swift */; };
 		FAB178CF2DB1256B00D75037 /* almaden_agentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178CE2DB1256B00D75037 /* almaden_agentUITests.swift */; };
 		FAB178D12DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */; };
+		FAB178E02DB12DAF00D75037 /* system-info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178DF2DB12DAF00D75037 /* system-info.swift */; };
+		FAB178E22DB12E6C00D75037 /* system-info.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178E12DB12E6C00D75037 /* system-info.view-model.swift */; };
+		FAB178E52DB12F1A00D75037 /* system-info.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178E42DB12F1A00D75037 /* system-info.service.swift */; };
+		FAB178E72DB141BC00D75037 /* ram-memory-consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178E62DB141BC00D75037 /* ram-memory-consumption.swift */; };
+		FAB178E92DB1428200D75037 /* ram-memory-consumption.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178E82DB1428200D75037 /* ram-memory-consumption.service.swift */; };
+		FAB178EB2DB1449100D75037 /* ram-memory-consumption.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178EA2DB1449100D75037 /* ram-memory-consumption.view-model.swift */; };
+		FAB178ED2DB176F900D75037 /* storage-consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178EC2DB176F900D75037 /* storage-consumption.swift */; };
+		FAB178EF2DB1789F00D75037 /* storage-consumption.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178EE2DB1789F00D75037 /* storage-consumption.service.swift */; };
+		FAB178F12DB17C5800D75037 /* storage-consumption-view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178F02DB17C5800D75037 /* storage-consumption-view-model.swift */; };
+		FAB178F42DB17D2200D75037 /* byte-formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178F32DB17D2200D75037 /* byte-formatter.swift */; };
+		FAB178F62DB271F900D75037 /* cpu-consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178F52DB271F900D75037 /* cpu-consumption.swift */; };
+		FAB178F82DB273CC00D75037 /* cpu-consumption.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178F72DB273CC00D75037 /* cpu-consumption.service.swift */; };
+		FAB178FA2DB274B900D75037 /* system-ctl-by-name.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178F92DB274B900D75037 /* system-ctl-by-name.swift */; };
+		FAB178FC2DB27FF700D75037 /* cpu-consumption.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178FB2DB27FF700D75037 /* cpu-consumption.view-model.swift */; };
+		FAB178FE2DB3C08000D75037 /* battery-info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178FD2DB3C08000D75037 /* battery-info.swift */; };
+		FAB179002DB3C0C800D75037 /* battery-consumption.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178FF2DB3C0C800D75037 /* battery-consumption.service.swift */; };
+		FAB179052DB3C6F700D75037 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB179042DB3C6F700D75037 /* IOKit.framework */; };
+		FAB179072DB3C8C400D75037 /* battery-consumption.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB179062DB3C8C400D75037 /* battery-consumption.view-model.swift */; };
+		FAB179092DB3CD1300D75037 /* arch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB179082DB3CD1300D75037 /* arch.swift */; };
+		FAB1790B2DB7EC7E00D75037 /* terminal-parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1790A2DB7EC7E00D75037 /* terminal-parser.swift */; };
+		FAB1790D2DB845B600D75037 /* wifi.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1790C2DB845B600D75037 /* wifi.service.swift */; };
+		FAB1790F2DB845E400D75037 /* wifi.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1790E2DB845E400D75037 /* wifi.view-model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +75,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA2044CD2DB8518B00D99393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA41D2382DB97DA000C85EF6 /* network-interfaces.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "network-interfaces.service.swift"; sourceTree = "<group>"; };
+		FA41D23A2DBA7BC400C85EF6 /* network-interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "network-interface.swift"; sourceTree = "<group>"; };
+		FA41D23C2DBA7F7A00C85EF6 /* append-and-return.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "append-and-return.swift"; sourceTree = "<group>"; };
+		FA41D23E2DBAA4F200C85EF6 /* network-interfaces.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "network-interfaces.view-model.swift"; sourceTree = "<group>"; };
+		FA41D2402DBBA15F00C85EF6 /* processes.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processes.service.swift; sourceTree = "<group>"; };
+		FA41D2422DBBAC9900C85EF6 /* process-snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "process-snapshot.swift"; sourceTree = "<group>"; };
+		FA41D2442DBBCFAA00C85EF6 /* processes.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "processes.view-model.swift"; sourceTree = "<group>"; };
+		FA8518EB2DBFF37C00102959 /* geolocation.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geolocation.service.swift; sourceTree = "<group>"; };
+		FA8518ED2DBFF43900102959 /* geolocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geolocation.swift; sourceTree = "<group>"; };
+		FA8518EF2DBFF69C00102959 /* geolocation.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "geolocation.view-model.swift"; sourceTree = "<group>"; };
+		FA8518F12DC023BD00102959 /* swap-usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swap-usage.swift"; sourceTree = "<group>"; };
+		FA8518F32DC0E2D200102959 /* applications.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applications.service.swift; sourceTree = "<group>"; };
+		FA8518F52DC0FD6300102959 /* application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application.swift; sourceTree = "<group>"; };
+		FA8518F72DC1101800102959 /* applications.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "applications.view-model.swift"; sourceTree = "<group>"; };
+		FA8518F92DC2409400102959 /* bundle-handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "bundle-handler.swift"; sourceTree = "<group>"; };
+		FA8518FB2DC4F47900102959 /* usb.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usb.service.swift; sourceTree = "<group>"; };
+		FA8518FD2DC94BE600102959 /* usb-event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-event.swift"; sourceTree = "<group>"; };
+		FA8518FF2DC95FC900102959 /* usb.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb.view-model.swift"; sourceTree = "<group>"; };
+		FAA7908F2DB84C3900ABA487 /* wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifi.swift; sourceTree = "<group>"; };
 		FAB178AF2DB1256900D75037 /* almaden-agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "almaden-agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB178B22DB1256900D75037 /* almaden_agentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentApp.swift; sourceTree = "<group>"; };
 		FAB178B42DB1256900D75037 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +106,29 @@
 		FAB178CA2DB1256B00D75037 /* almaden-agentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "almaden-agentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB178CE2DB1256B00D75037 /* almaden_agentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentUITests.swift; sourceTree = "<group>"; };
 		FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAB178DF2DB12DAF00D75037 /* system-info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "system-info.swift"; sourceTree = "<group>"; };
+		FAB178E12DB12E6C00D75037 /* system-info.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "system-info.view-model.swift"; sourceTree = "<group>"; };
+		FAB178E42DB12F1A00D75037 /* system-info.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "system-info.service.swift"; sourceTree = "<group>"; };
+		FAB178E62DB141BC00D75037 /* ram-memory-consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ram-memory-consumption.swift"; sourceTree = "<group>"; };
+		FAB178E82DB1428200D75037 /* ram-memory-consumption.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ram-memory-consumption.service.swift"; sourceTree = "<group>"; };
+		FAB178EA2DB1449100D75037 /* ram-memory-consumption.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ram-memory-consumption.view-model.swift"; sourceTree = "<group>"; };
+		FAB178EC2DB176F900D75037 /* storage-consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "storage-consumption.swift"; sourceTree = "<group>"; };
+		FAB178EE2DB1789F00D75037 /* storage-consumption.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "storage-consumption.service.swift"; sourceTree = "<group>"; };
+		FAB178F02DB17C5800D75037 /* storage-consumption-view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "storage-consumption-view-model.swift"; sourceTree = "<group>"; };
+		FAB178F32DB17D2200D75037 /* byte-formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "byte-formatter.swift"; sourceTree = "<group>"; };
+		FAB178F52DB271F900D75037 /* cpu-consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cpu-consumption.swift"; sourceTree = "<group>"; };
+		FAB178F72DB273CC00D75037 /* cpu-consumption.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cpu-consumption.service.swift"; sourceTree = "<group>"; };
+		FAB178F92DB274B900D75037 /* system-ctl-by-name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "system-ctl-by-name.swift"; sourceTree = "<group>"; };
+		FAB178FB2DB27FF700D75037 /* cpu-consumption.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cpu-consumption.view-model.swift"; sourceTree = "<group>"; };
+		FAB178FD2DB3C08000D75037 /* battery-info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "battery-info.swift"; sourceTree = "<group>"; };
+		FAB178FF2DB3C0C800D75037 /* battery-consumption.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "battery-consumption.service.swift"; sourceTree = "<group>"; };
+		FAB179022DB3C52E00D75037 /* IOKitBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOKitBridge.h; sourceTree = "<group>"; };
+		FAB179042DB3C6F700D75037 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		FAB179062DB3C8C400D75037 /* battery-consumption.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "battery-consumption.view-model.swift"; sourceTree = "<group>"; };
+		FAB179082DB3CD1300D75037 /* arch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arch.swift; sourceTree = "<group>"; };
+		FAB1790A2DB7EC7E00D75037 /* terminal-parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "terminal-parser.swift"; sourceTree = "<group>"; };
+		FAB1790C2DB845B600D75037 /* wifi.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifi.service.swift; sourceTree = "<group>"; };
+		FAB1790E2DB845E400D75037 /* wifi.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "wifi.view-model.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB179052DB3C6F700D75037 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +164,7 @@
 				FAB178C32DB1256B00D75037 /* almaden-agentTests */,
 				FAB178CD2DB1256B00D75037 /* almaden-agentUITests */,
 				FAB178B02DB1256900D75037 /* Products */,
+				FAB179032DB3C6F700D75037 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +181,12 @@
 		FAB178B12DB1256900D75037 /* almaden-agent */ = {
 			isa = PBXGroup;
 			children = (
+				FA2044CD2DB8518B00D99393 /* Info.plist */,
+				FAB179012DB3C50F00D75037 /* bridge */,
+				FAB178F22DB17D1100D75037 /* helpers */,
+				FAB178E32DB12ED500D75037 /* services */,
+				FAB178DE2DB12D4A00D75037 /* view-models */,
+				FAB178DD2DB12D3C00D75037 /* models */,
 				FAB178B22DB1256900D75037 /* almaden_agentApp.swift */,
 				FAB178B42DB1256900D75037 /* ContentView.swift */,
 				FAB178B62DB1256B00D75037 /* Assets.xcassets */,
@@ -127,6 +219,90 @@
 				FAB178D02DB1256B00D75037 /* almaden_agentUITestsLaunchTests.swift */,
 			);
 			path = "almaden-agentUITests";
+			sourceTree = "<group>";
+		};
+		FAB178DD2DB12D3C00D75037 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178DF2DB12DAF00D75037 /* system-info.swift */,
+				FAB178E62DB141BC00D75037 /* ram-memory-consumption.swift */,
+				FAB178EC2DB176F900D75037 /* storage-consumption.swift */,
+				FAB178F52DB271F900D75037 /* cpu-consumption.swift */,
+				FAB178FD2DB3C08000D75037 /* battery-info.swift */,
+				FAA7908F2DB84C3900ABA487 /* wifi.swift */,
+				FA41D23A2DBA7BC400C85EF6 /* network-interface.swift */,
+				FA41D2422DBBAC9900C85EF6 /* process-snapshot.swift */,
+				FA8518ED2DBFF43900102959 /* geolocation.swift */,
+				FA8518F12DC023BD00102959 /* swap-usage.swift */,
+				FA8518F52DC0FD6300102959 /* application.swift */,
+				FA8518FD2DC94BE600102959 /* usb-event.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FAB178DE2DB12D4A00D75037 /* view-models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178E12DB12E6C00D75037 /* system-info.view-model.swift */,
+				FAB178EA2DB1449100D75037 /* ram-memory-consumption.view-model.swift */,
+				FAB178F02DB17C5800D75037 /* storage-consumption-view-model.swift */,
+				FAB178FB2DB27FF700D75037 /* cpu-consumption.view-model.swift */,
+				FAB179062DB3C8C400D75037 /* battery-consumption.view-model.swift */,
+				FAB1790E2DB845E400D75037 /* wifi.view-model.swift */,
+				FA41D23E2DBAA4F200C85EF6 /* network-interfaces.view-model.swift */,
+				FA41D2442DBBCFAA00C85EF6 /* processes.view-model.swift */,
+				FA8518EF2DBFF69C00102959 /* geolocation.view-model.swift */,
+				FA8518F72DC1101800102959 /* applications.view-model.swift */,
+				FA8518FF2DC95FC900102959 /* usb.view-model.swift */,
+			);
+			path = "view-models";
+			sourceTree = "<group>";
+		};
+		FAB178E32DB12ED500D75037 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178E42DB12F1A00D75037 /* system-info.service.swift */,
+				FAB178E82DB1428200D75037 /* ram-memory-consumption.service.swift */,
+				FAB178EE2DB1789F00D75037 /* storage-consumption.service.swift */,
+				FAB178F72DB273CC00D75037 /* cpu-consumption.service.swift */,
+				FAB178FF2DB3C0C800D75037 /* battery-consumption.service.swift */,
+				FAB1790C2DB845B600D75037 /* wifi.service.swift */,
+				FA41D2382DB97DA000C85EF6 /* network-interfaces.service.swift */,
+				FA41D2402DBBA15F00C85EF6 /* processes.service.swift */,
+				FA8518EB2DBFF37C00102959 /* geolocation.service.swift */,
+				FA8518F32DC0E2D200102959 /* applications.service.swift */,
+				FA8518FB2DC4F47900102959 /* usb.service.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		FAB178F22DB17D1100D75037 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178F32DB17D2200D75037 /* byte-formatter.swift */,
+				FAB178F92DB274B900D75037 /* system-ctl-by-name.swift */,
+				FAB179082DB3CD1300D75037 /* arch.swift */,
+				FAB1790A2DB7EC7E00D75037 /* terminal-parser.swift */,
+				FA41D23C2DBA7F7A00C85EF6 /* append-and-return.swift */,
+				FA8518F92DC2409400102959 /* bundle-handler.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		FAB179012DB3C50F00D75037 /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				FAB179022DB3C52E00D75037 /* IOKitBridge.h */,
+			);
+			path = bridge;
+			sourceTree = "<group>";
+		};
+		FAB179032DB3C6F700D75037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB179042DB3C6F700D75037 /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +435,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8518EC2DBFF37C00102959 /* geolocation.service.swift in Sources */,
+				FA8518FA2DC2409400102959 /* bundle-handler.swift in Sources */,
+				FAB178F62DB271F900D75037 /* cpu-consumption.swift in Sources */,
+				FAB1790D2DB845B600D75037 /* wifi.service.swift in Sources */,
+				FA8518F42DC0E2D200102959 /* applications.service.swift in Sources */,
+				FAB1790B2DB7EC7E00D75037 /* terminal-parser.swift in Sources */,
+				FAB178EF2DB1789F00D75037 /* storage-consumption.service.swift in Sources */,
+				FA41D23D2DBA7F7A00C85EF6 /* append-and-return.swift in Sources */,
+				FAB178F12DB17C5800D75037 /* storage-consumption-view-model.swift in Sources */,
+				FAB178E22DB12E6C00D75037 /* system-info.view-model.swift in Sources */,
+				FA41D2432DBBAC9A00C85EF6 /* process-snapshot.swift in Sources */,
+				FAB1790F2DB845E400D75037 /* wifi.view-model.swift in Sources */,
 				FAB178B52DB1256900D75037 /* ContentView.swift in Sources */,
+				FA8518FC2DC4F47900102959 /* usb.service.swift in Sources */,
+				FA8519002DC95FC900102959 /* usb.view-model.swift in Sources */,
+				FAB178ED2DB176F900D75037 /* storage-consumption.swift in Sources */,
+				FAB179002DB3C0C800D75037 /* battery-consumption.service.swift in Sources */,
+				FAB179092DB3CD1300D75037 /* arch.swift in Sources */,
+				FA8518EE2DBFF43900102959 /* geolocation.swift in Sources */,
+				FAB178E92DB1428200D75037 /* ram-memory-consumption.service.swift in Sources */,
+				FAB179072DB3C8C400D75037 /* battery-consumption.view-model.swift in Sources */,
+				FAB178EB2DB1449100D75037 /* ram-memory-consumption.view-model.swift in Sources */,
+				FAB178FA2DB274B900D75037 /* system-ctl-by-name.swift in Sources */,
+				FA41D23F2DBAA4F200C85EF6 /* network-interfaces.view-model.swift in Sources */,
+				FA8518F22DC023BD00102959 /* swap-usage.swift in Sources */,
+				FA41D2392DB97DA000C85EF6 /* network-interfaces.service.swift in Sources */,
+				FAB178FE2DB3C08000D75037 /* battery-info.swift in Sources */,
+				FAB178E52DB12F1A00D75037 /* system-info.service.swift in Sources */,
+				FA8518F62DC0FD6300102959 /* application.swift in Sources */,
+				FAB178F82DB273CC00D75037 /* cpu-consumption.service.swift in Sources */,
+				FAB178F42DB17D2200D75037 /* byte-formatter.swift in Sources */,
+				FAB178FC2DB27FF700D75037 /* cpu-consumption.view-model.swift in Sources */,
+				FA41D23B2DBA7BC400C85EF6 /* network-interface.swift in Sources */,
+				FA41D2412DBBA15F00C85EF6 /* processes.service.swift in Sources */,
+				FAA790902DB84C3900ABA487 /* wifi.swift in Sources */,
+				FA8518F82DC1101800102959 /* applications.view-model.swift in Sources */,
+				FA41D2452DBBCFAA00C85EF6 /* processes.view-model.swift in Sources */,
+				FA8518F02DBFF69C00102959 /* geolocation.view-model.swift in Sources */,
+				FAB178E72DB141BC00D75037 /* ram-memory-consumption.swift in Sources */,
+				FA8518FE2DC94BE600102959 /* usb-event.swift in Sources */,
+				FAB178E02DB12DAF00D75037 /* system-info.swift in Sources */,
 				FAB178B32DB1256900D75037 /* almaden_agentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,24 +634,31 @@
 		FAB178D52DB1256B00D75037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "almaden-agent/almaden_agent.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"almaden-agent/Preview Content\"";
+				DEVELOPMENT_TEAM = A7N2KA2C47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "almaden-agent/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/$(PROJECT_NAME)/bridge/IOKitBridge.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -443,24 +666,31 @@
 		FAB178D62DB1256B00D75037 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "almaden-agent/almaden_agent.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"almaden-agent/Preview Content\"";
+				DEVELOPMENT_TEAM = A7N2KA2C47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "almaden-agent/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "Almaden-LTDA.almaden-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/$(PROJECT_NAME)/bridge/IOKitBridge.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
