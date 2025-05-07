@@ -39,8 +39,8 @@ struct ContentView: View {
     @StateObject private var applications =
         ApplicationsViewmodel();
     
-//    @StateObject private var usbevents =
-//        USBViewmodel();
+    @StateObject private var usbevents =
+        USBViewmodel();
     
     @StateObject private var connected_devices =
         USBDevicesViewmodel();
@@ -211,7 +211,7 @@ struct ContentView: View {
                         
                         ScrollView(.horizontal) {
                             
-                            HStack {
+                            LazyHStack {
                                 
                                 ForEach(self.processes.processes, id: \.pid) { item in
                                     
@@ -242,7 +242,7 @@ struct ContentView: View {
                         
                         ScrollView(.horizontal) {
                             
-                            HStack {
+                            LazyHStack {
                                 
                                 ForEach(self.applications.applications, id: \.name) { item in
                                     
@@ -262,29 +262,29 @@ struct ContentView: View {
                         }
                     }
                     
-//                    Divider();
-//                    
-//                    VStack(alignment: .leading, spacing: 10) {
-//                        
-//                        Text("🔌 **USB Events(\(self.usbevents.events.count))**").font(.headline)
-//                        
-//                        ScrollView(.horizontal) {
-//                            
-//                            HStack {
-//                                
-//                                ForEach(self.usbevents.events, id: \.id) { item in
-//                                    
-//                                    VStack(alignment: .leading, spacing: 5) {
-//                                        Text("🔹 Type: \(item.event_type)")
-//                                        Text("🔹 Product Name: \(item.product_name ?? "N.A")")
-//                                        Text("🔹 Vendor Name: \(item.vendor_name ?? "N.A")")
-//                                        Text("🔹 Serial Number: \(item.serial_number ?? "N.A")")
-//                                        Text("🔹 Speed: \(item.speed ?? 0)")
-//                                    }
-//                                }
-//                            }
-//                        }
-//                    }
+                    Divider();
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        
+                        Text("🔌 **USB Events(\(self.usbevents.events.count))**").font(.headline)
+                        
+                        ScrollView(.horizontal) {
+                            
+                            HStack {
+                                
+                                ForEach(self.usbevents.events, id: \.id) { item in
+                                    
+                                    VStack(alignment: .leading, spacing: 5) {
+                                        Text("🔹 Type: \(item.event_type)")
+                                        Text("🔹 Product Name: \(item.product_name ?? "N.A")")
+                                        Text("🔹 Vendor Name: \(item.vendor_name ?? "N.A")")
+                                        Text("🔹 Serial Number: \(item.serial_number ?? "N.A")")
+                                        Text("🔹 Speed: \(item.speed ?? 0)")
+                                    }
+                                }
+                            }
+                        }
+                    }
                     
                     Divider();
                     
