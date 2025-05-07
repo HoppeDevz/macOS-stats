@@ -1,32 +1,32 @@
 //
-//  network-interfaces.view-model.swift
+//  usb.view-model.swift
 //  almaden-agent
 //
-//  Created by Gabriel Hoppe on 24/04/25.
+//  Created by Gabriel Hoppe on 05/05/25.
 //
 
 import Foundation
 
 @MainActor
-class NetworkInterfacesViewmodel: ObservableObject {
+class USBViewmodel: ObservableObject {
     
-    @Published var interfaces: [INetworkInterface] = [];
-    private var interfaces_service: NetworkInterfacesService = NetworkInterfacesService();
+    @Published var events: [IUSBEvent] = [];
     
     private var timer: Timer?;
     
     init() {
         self.timer = nil;
         self.start_monitoring();
+        USBService.watch_usb_ports();
     }
     
     public func fetch() async {
         
-        let interfaces = await Task.detached(priority: .background) { [interfaces_service] in
-            return interfaces_service.read()
+        let events = await Task.detached(priority: .background) { [] in
+            return USBService.retrieve_events();
         }.value
 
-        self.interfaces = interfaces;
+        self.events = events;
         
     }
     
@@ -36,7 +36,7 @@ class NetworkInterfacesViewmodel: ObservableObject {
             await self?.fetch()
         }
         
-        self.timer = Timer.scheduledTimer(withTimeInterval: 180.0, repeats: true) { [weak self] _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
             Task { [weak self] in
                 await self?.fetch()
             }

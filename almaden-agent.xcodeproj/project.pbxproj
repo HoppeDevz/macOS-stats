@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3B561B2DCA49D7007C336F /* usb-devices.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B561A2DCA49D7007C336F /* usb-devices.service.swift */; };
+		FA3B561D2DCA4B04007C336F /* usb-device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B561C2DCA4B04007C336F /* usb-device.swift */; };
+		FA3B561F2DCA4BCF007C336F /* usb-devices.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B561E2DCA4BCF007C336F /* usb-devices.view-model.swift */; };
 		FA41D2392DB97DA000C85EF6 /* network-interfaces.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D2382DB97DA000C85EF6 /* network-interfaces.service.swift */; };
 		FA41D23B2DBA7BC400C85EF6 /* network-interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D23A2DBA7BC400C85EF6 /* network-interface.swift */; };
 		FA41D23D2DBA7F7A00C85EF6 /* append-and-return.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41D23C2DBA7F7A00C85EF6 /* append-and-return.swift */; };
@@ -22,9 +25,9 @@
 		FA8518F62DC0FD6300102959 /* application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F52DC0FD6300102959 /* application.swift */; };
 		FA8518F82DC1101800102959 /* applications.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F72DC1101800102959 /* applications.view-model.swift */; };
 		FA8518FA2DC2409400102959 /* bundle-handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518F92DC2409400102959 /* bundle-handler.swift */; };
-		FA8518FC2DC4F47900102959 /* usb.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FB2DC4F47900102959 /* usb.service.swift */; };
+		FA8518FC2DC4F47900102959 /* usb-events.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FB2DC4F47900102959 /* usb-events.service.swift */; };
 		FA8518FE2DC94BE600102959 /* usb-event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FD2DC94BE600102959 /* usb-event.swift */; };
-		FA8519002DC95FC900102959 /* usb.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FF2DC95FC900102959 /* usb.view-model.swift */; };
+		FA8519002DC95FC900102959 /* usb-event.view-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8518FF2DC95FC900102959 /* usb-event.view-model.swift */; };
 		FAA790902DB84C3900ABA487 /* wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7908F2DB84C3900ABA487 /* wifi.swift */; };
 		FAB178B32DB1256900D75037 /* almaden_agentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B22DB1256900D75037 /* almaden_agentApp.swift */; };
 		FAB178B52DB1256900D75037 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178B42DB1256900D75037 /* ContentView.swift */; };
@@ -76,6 +79,9 @@
 
 /* Begin PBXFileReference section */
 		FA2044CD2DB8518B00D99393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA3B561A2DCA49D7007C336F /* usb-devices.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-devices.service.swift"; sourceTree = "<group>"; };
+		FA3B561C2DCA4B04007C336F /* usb-device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-device.swift"; sourceTree = "<group>"; };
+		FA3B561E2DCA4BCF007C336F /* usb-devices.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-devices.view-model.swift"; sourceTree = "<group>"; };
 		FA41D2382DB97DA000C85EF6 /* network-interfaces.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "network-interfaces.service.swift"; sourceTree = "<group>"; };
 		FA41D23A2DBA7BC400C85EF6 /* network-interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "network-interface.swift"; sourceTree = "<group>"; };
 		FA41D23C2DBA7F7A00C85EF6 /* append-and-return.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "append-and-return.swift"; sourceTree = "<group>"; };
@@ -91,9 +97,9 @@
 		FA8518F52DC0FD6300102959 /* application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application.swift; sourceTree = "<group>"; };
 		FA8518F72DC1101800102959 /* applications.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "applications.view-model.swift"; sourceTree = "<group>"; };
 		FA8518F92DC2409400102959 /* bundle-handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "bundle-handler.swift"; sourceTree = "<group>"; };
-		FA8518FB2DC4F47900102959 /* usb.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usb.service.swift; sourceTree = "<group>"; };
+		FA8518FB2DC4F47900102959 /* usb-events.service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-events.service.swift"; sourceTree = "<group>"; };
 		FA8518FD2DC94BE600102959 /* usb-event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-event.swift"; sourceTree = "<group>"; };
-		FA8518FF2DC95FC900102959 /* usb.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb.view-model.swift"; sourceTree = "<group>"; };
+		FA8518FF2DC95FC900102959 /* usb-event.view-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usb-event.view-model.swift"; sourceTree = "<group>"; };
 		FAA7908F2DB84C3900ABA487 /* wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifi.swift; sourceTree = "<group>"; };
 		FAB178AF2DB1256900D75037 /* almaden-agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "almaden-agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB178B22DB1256900D75037 /* almaden_agentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almaden_agentApp.swift; sourceTree = "<group>"; };
@@ -236,6 +242,7 @@
 				FA8518F12DC023BD00102959 /* swap-usage.swift */,
 				FA8518F52DC0FD6300102959 /* application.swift */,
 				FA8518FD2DC94BE600102959 /* usb-event.swift */,
+				FA3B561C2DCA4B04007C336F /* usb-device.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -253,7 +260,8 @@
 				FA41D2442DBBCFAA00C85EF6 /* processes.view-model.swift */,
 				FA8518EF2DBFF69C00102959 /* geolocation.view-model.swift */,
 				FA8518F72DC1101800102959 /* applications.view-model.swift */,
-				FA8518FF2DC95FC900102959 /* usb.view-model.swift */,
+				FA8518FF2DC95FC900102959 /* usb-event.view-model.swift */,
+				FA3B561E2DCA4BCF007C336F /* usb-devices.view-model.swift */,
 			);
 			path = "view-models";
 			sourceTree = "<group>";
@@ -271,7 +279,8 @@
 				FA41D2402DBBA15F00C85EF6 /* processes.service.swift */,
 				FA8518EB2DBFF37C00102959 /* geolocation.service.swift */,
 				FA8518F32DC0E2D200102959 /* applications.service.swift */,
-				FA8518FB2DC4F47900102959 /* usb.service.swift */,
+				FA8518FB2DC4F47900102959 /* usb-events.service.swift */,
+				FA3B561A2DCA49D7007C336F /* usb-devices.service.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -442,14 +451,15 @@
 				FA8518F42DC0E2D200102959 /* applications.service.swift in Sources */,
 				FAB1790B2DB7EC7E00D75037 /* terminal-parser.swift in Sources */,
 				FAB178EF2DB1789F00D75037 /* storage-consumption.service.swift in Sources */,
+				FA3B561B2DCA49D7007C336F /* usb-devices.service.swift in Sources */,
 				FA41D23D2DBA7F7A00C85EF6 /* append-and-return.swift in Sources */,
 				FAB178F12DB17C5800D75037 /* storage-consumption-view-model.swift in Sources */,
 				FAB178E22DB12E6C00D75037 /* system-info.view-model.swift in Sources */,
 				FA41D2432DBBAC9A00C85EF6 /* process-snapshot.swift in Sources */,
 				FAB1790F2DB845E400D75037 /* wifi.view-model.swift in Sources */,
 				FAB178B52DB1256900D75037 /* ContentView.swift in Sources */,
-				FA8518FC2DC4F47900102959 /* usb.service.swift in Sources */,
-				FA8519002DC95FC900102959 /* usb.view-model.swift in Sources */,
+				FA8518FC2DC4F47900102959 /* usb-events.service.swift in Sources */,
+				FA8519002DC95FC900102959 /* usb-event.view-model.swift in Sources */,
 				FAB178ED2DB176F900D75037 /* storage-consumption.swift in Sources */,
 				FAB179002DB3C0C800D75037 /* battery-consumption.service.swift in Sources */,
 				FAB179092DB3CD1300D75037 /* arch.swift in Sources */,
@@ -468,8 +478,10 @@
 				FAB178F42DB17D2200D75037 /* byte-formatter.swift in Sources */,
 				FAB178FC2DB27FF700D75037 /* cpu-consumption.view-model.swift in Sources */,
 				FA41D23B2DBA7BC400C85EF6 /* network-interface.swift in Sources */,
+				FA3B561D2DCA4B04007C336F /* usb-device.swift in Sources */,
 				FA41D2412DBBA15F00C85EF6 /* processes.service.swift in Sources */,
 				FAA790902DB84C3900ABA487 /* wifi.swift in Sources */,
+				FA3B561F2DCA4BCF007C336F /* usb-devices.view-model.swift in Sources */,
 				FA8518F82DC1101800102959 /* applications.view-model.swift in Sources */,
 				FA41D2452DBBCFAA00C85EF6 /* processes.view-model.swift in Sources */,
 				FA8518F02DBFF69C00102959 /* geolocation.view-model.swift in Sources */,

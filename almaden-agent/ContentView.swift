@@ -12,14 +12,14 @@ struct ContentView: View {
     @StateObject private var system_info = 
         SystemInfoViewModel();
     
+    @StateObject private var cpu_consumption =
+        CpuConsumptionViewModel();
+    
     @StateObject private var ram_consumption = 
         RamMemoryConsumptionViewModel();
     
     @StateObject private var storage_consumption = 
         StorageConsumptionViewModel();
-    
-    @StateObject private var cpu_consumption =
-        CpuConsumptionViewModel();
     
     @StateObject private var battery_consumption =
         BatteryConsumptionViewModel();
@@ -39,8 +39,11 @@ struct ContentView: View {
     @StateObject private var applications =
         ApplicationsViewmodel();
     
-    @StateObject private var usbevents =
-        USBViewmodel();
+//    @StateObject private var usbevents =
+//        USBViewmodel();
+    
+    @StateObject private var connected_devices =
+        USBDevicesViewmodel();
     
     func format_interface_speed(_ speed: UInt64?) -> String {
         
@@ -213,7 +216,6 @@ struct ContentView: View {
                                 ForEach(self.processes.processes, id: \.pid) { item in
                                     
                                     VStack(alignment: .leading, spacing: 5) {
-                                        Image(nsImage: item.icon)
                                         Text("🔹 PID: \(item.pid)")
                                         Text("🔹 Name: \(item.name)")
                                         Text("🔹 App ID: \(item.appid)")
@@ -260,20 +262,43 @@ struct ContentView: View {
                         }
                     }
                     
+//                    Divider();
+//                    
+//                    VStack(alignment: .leading, spacing: 10) {
+//                        
+//                        Text("🔌 **USB Events(\(self.usbevents.events.count))**").font(.headline)
+//                        
+//                        ScrollView(.horizontal) {
+//                            
+//                            HStack {
+//                                
+//                                ForEach(self.usbevents.events, id: \.id) { item in
+//                                    
+//                                    VStack(alignment: .leading, spacing: 5) {
+//                                        Text("🔹 Type: \(item.event_type)")
+//                                        Text("🔹 Product Name: \(item.product_name ?? "N.A")")
+//                                        Text("🔹 Vendor Name: \(item.vendor_name ?? "N.A")")
+//                                        Text("🔹 Serial Number: \(item.serial_number ?? "N.A")")
+//                                        Text("🔹 Speed: \(item.speed ?? 0)")
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
+                    
                     Divider();
                     
                     VStack(alignment: .leading, spacing: 10) {
                         
-                        Text("🧵 **USB Events(\(self.usbevents.events.count))**").font(.headline)
+                        Text("🔌 **USB Devices(\(self.connected_devices.connected_devices.count))**").font(.headline)
                         
                         ScrollView(.horizontal) {
                             
                             HStack {
                                 
-                                ForEach(self.usbevents.events, id: \.id) { item in
+                                ForEach(self.connected_devices.connected_devices, id: \.id) { item in
                                     
                                     VStack(alignment: .leading, spacing: 5) {
-                                        Text("🔹 Type: \(item.event_type)")
                                         Text("🔹 Product Name: \(item.product_name ?? "N.A")")
                                         Text("🔹 Vendor Name: \(item.vendor_name ?? "N.A")")
                                         Text("🔹 Serial Number: \(item.serial_number ?? "N.A")")

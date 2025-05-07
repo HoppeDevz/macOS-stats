@@ -127,6 +127,7 @@ class NetworkInterfacesService {
             }
         }
         
+        ifaddr_pointer.map { freeifaddrs($0) };
         return interfaces;
         
     }

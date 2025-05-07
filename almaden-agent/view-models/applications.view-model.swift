@@ -36,7 +36,7 @@ class ApplicationsViewmodel: ObservableObject {
             await self?.fetch()
         }
         
-        self.timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true) { [weak self] _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 180.0, repeats: true) { [weak self] _ in
             Task { [weak self] in
                 await self?.fetch()
             }

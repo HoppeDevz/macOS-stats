@@ -8,12 +8,14 @@
 import Foundation
 import CoreLocation
 
-class GeolocationService {
+class GeolocationService: NSObject, CLLocationManagerDelegate {
     
-    let locationManager =
-        CLLocationManager()
+    private let locationManager =
+        CLLocationManager();
     
-    init() {
+    override init() {
+        super.init();
+        locationManager.delegate = self;
         locationManager.requestWhenInUseAuthorization();
     }
  
@@ -24,6 +26,10 @@ class GeolocationService {
             long: locationManager.location?.coordinate.longitude ?? 0
         )
         
+    }
+    
+    deinit {
+        locationManager.delegate = nil;
     }
     
 }

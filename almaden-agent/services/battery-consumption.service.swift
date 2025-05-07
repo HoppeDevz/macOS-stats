@@ -68,4 +68,8 @@ class BatteryConsumptionService {
         return nil
     }
     
+    deinit {
+        IOObjectRelease(self.service)
+    }
+    
 }

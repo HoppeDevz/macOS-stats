@@ -20,6 +20,9 @@ class RamMemoryConsumptionService {
     private var vm_used: UInt64 = 0;
     private var vm_free: UInt64 = 0;
     
+    private var timer: DispatchSourceTimer?;
+    private let timerQueue = DispatchQueue(label: "almaden-agent.ram-timer", qos: .background);
+    
     
     init() {
         self.setup();
@@ -55,25 +58,28 @@ class RamMemoryConsumptionService {
         if kerr == KERN_SUCCESS {
             
             self.total = Double(stats.max_mem);
+            self.start_timer();
+            return;
             
-            DispatchQueue.global(qos: .background).async {
-                self.read_thread();
-            }
-            
-            return
         }
         
         self.total = 0;
             
     }
     
-    private func read_thread() {
+    private func start_timer() {
         
-        while (true) {
-            self.retrieve_ram_info();
-            self.retrieve_vm_info();
-            Thread.sleep(forTimeInterval: 1.0);
-        }
+        timer = DispatchSource.makeTimerSource(queue: timerQueue);
+        timer?.schedule(deadline: .now(), repeating: .seconds(10));
+        timer?.setEventHandler { [weak self] in self?.retrieve_ram_info(); self?.retrieve_vm_info(); }
+        timer?.resume();
+        
+    }
+    
+    private func stop_timer() {
+        
+        timer?.cancel();
+        timer = nil;
         
     }
     

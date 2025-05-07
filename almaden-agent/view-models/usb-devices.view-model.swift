@@ -1,32 +1,32 @@
 //
-//  usb.view-model.swift
+//  usb-devices.swift
 //  almaden-agent
 //
-//  Created by Gabriel Hoppe on 05/05/25.
+//  Created by Gabriel Hoppe on 06/05/25.
 //
 
 import Foundation
 
 @MainActor
-class USBViewmodel: ObservableObject {
+class USBDevicesViewmodel: ObservableObject {
     
-    @Published var events: [IUSBEvent] = [];
+    @Published var connected_devices: [IUSBDevice] = [];
+    let connected_devices_services: USBDevicesService = USBDevicesService();
     
     private var timer: Timer?;
     
     init() {
         self.timer = nil;
         self.start_monitoring();
-        USBService.watch_usb_ports();
     }
     
     public func fetch() async {
         
-        let events = await Task.detached(priority: .background) { [] in
-            return USBService.retrieve_events();
+        let connected_devices = await Task.detached(priority: .background) { [connected_devices_services] in
+            return connected_devices_services.retrieve_connected_devices();
         }.value
 
-        self.events = events;
+        self.connected_devices = connected_devices;
         
     }
     
@@ -36,7 +36,7 @@ class USBViewmodel: ObservableObject {
             await self?.fetch()
         }
         
-        self.timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true) { [weak self] _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { [weak self] _ in
             Task { [weak self] in
                 await self?.fetch()
             }

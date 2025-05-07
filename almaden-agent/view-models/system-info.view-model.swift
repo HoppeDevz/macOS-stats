@@ -31,7 +31,11 @@ class SystemInfoViewModel: ObservableObject {
     
     func start_monitoring() {
         
-        self.timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true) { [weak self] _ in
+        Task { [weak self] in
+            self?.fetch()
+        }
+        
+        self.timer = Timer.scheduledTimer(withTimeInterval: 180.0, repeats: true) { [weak self] _ in
             Task { [weak self] in
                 await self?.fetch()
             }

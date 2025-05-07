@@ -24,6 +24,9 @@ class CpuConsumptionService {
     private var has_hyperv_cores = false;
     private var num_cpus: uint = 0;
     
+    private var timer: DispatchSourceTimer?;
+    private let timerQueue = DispatchQueue(label: "almaden-agent.cpu-timer", qos: .background);
+    
     init() {
         
         self.setup();
@@ -54,19 +57,24 @@ class CpuConsumptionService {
             }
         }
         
-        // Create thread.
-        DispatchQueue.global(qos: .background).async {
-            self.read_thread()
-        }
+        self.start_timer();
         
     }
     
-    private func read_thread() {
+    private func start_timer() {
         
-        while (true) {
-            self.retrieve_cpu_information();
-            Thread.sleep(forTimeInterval: 1.0);
-        }
+        timer = DispatchSource.makeTimerSource(queue: timerQueue);
+        timer?.schedule(deadline: .now(), repeating: .seconds(5));
+        timer?.setEventHandler { [weak self] in self?.retrieve_cpu_information(); }
+        timer?.resume();
+        
+    }
+    
+    private func stop_timer() {
+        
+        timer?.cancel();
+        timer = nil;
+        
     }
     
     private func retrieve_cpu_information() {
@@ -115,13 +123,19 @@ class CpuConsumptionService {
                 
             }
             
-            if (self.usage_per_core.count > 0) {
+            if self.usage_per_core.count > 0 {
                 
                 let total = Double(self.usage_per_core.reduce(0, +));
                 let count = Double(self.usage_per_core.count);
                 
                 self.usage =  total / count;
-                // print("CPU Usage: \(self.usage)");
+                
+            }
+            
+            if let prev = self.prev_cpu_info {
+                
+                let prev_size = Int(self.num_prev_cpu_info) * MemoryLayout<integer_t>.stride;
+                vm_deallocate(mach_task_self_, vm_address_t(bitPattern: prev), vm_size_t(prev_size));
                 
             }
             
@@ -130,8 +144,6 @@ class CpuConsumptionService {
                         
             self.cpu_info = nil;
             self.num_cpu_info = 0;
-            
-            
             
         }
         

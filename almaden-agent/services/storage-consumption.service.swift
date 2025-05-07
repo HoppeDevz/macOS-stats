@@ -17,7 +17,10 @@ class StorageConsumptionService {
         
         let keys: [URLResourceKey] = [.volumeNameKey];
         let options: FileManager.VolumeEnumerationOptions = [.skipHiddenVolumes];
-        let paths = FileManager.default.mountedVolumeURLs(includingResourceValuesForKeys: keys, options: options)!;
+        
+        guard let paths = FileManager.default.mountedVolumeURLs(includingResourceValuesForKeys: keys, options: options) else {
+            return;
+        };
             
         guard let session = DASessionCreate(kCFAllocatorDefault) else {
             return

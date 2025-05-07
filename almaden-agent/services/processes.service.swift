@@ -61,7 +61,7 @@ class ProcessesService {
                     pid: proc.pid,
                     appid: proc.appid,
                     name: proc.name,
-                    icon: proc.icon,
+                    // icon: proc.icon,
                     cpu_single_core_percent: cpu_single_core_usage_percent,
                     cpu_multi_core_percent: cpu_multi_core_usage_percent,
                     
@@ -152,7 +152,7 @@ class ProcessesService {
                 pid: pid,
                 appid: main_bundle_details?.CFBundleIdentifier,
                 name: procname,
-                icon: NSWorkspace.shared.icon(forFile: proc_bundle_url.path),
+                // icon: NSWorkspace.shared.icon(forFile: proc_bundle_url.path),
                 cpu_time: Double(proctask_info.pti_total_user + proctask_info.pti_total_system) * Double(time_base.numer / time_base.denom),
                 memory_consumption: proctask_info.pti_resident_size
             ));
@@ -166,8 +166,7 @@ class ProcessesService {
     public func list_processes() -> [IProcessSnapshot] {
         
         let snapshot = self.take_snapshot();
-        // let ordered = snapshot.sorted { $0.name.lowercased() < $1.name.lowercased() }
-        let ordered = snapshot.filter { $0.name.lowercased().contains("docker") }.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        let ordered = snapshot.sorted { $0.name.lowercased() < $1.name.lowercased() }
         
         return ordered;
         
